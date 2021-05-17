@@ -1,0 +1,12 @@
+<p>user-search works!</p>
+
+<p>Enter User Id </p>
+    <input type="number" name="id" [(ngModel)]="id" /> 
+    <br/><br/>
+    <input type="button" value="Search" (click)="search()" /> 
+
+    <p>Name: {{ (users | async)?.name}}</p>
+    <p>Username: {{ (users | async)?.username}}</p>
+    <p>Email: {{ (users | async)?.email}}</p>
+   
+    

@@ -1,0 +1,12 @@
+<p>customer-search works!</p>
+<p> Customer ID </p>
+<input type="number" name="cus_id" [(ngModel)]="cus_id" /> 
+<br/><br/>
+<input type="button" value="Search" (click)="search()" /> 
+
+<p>Name : {{ (customer | async)?.cus_name}}</p>
+<p>Password : {{ (customer | async)?.cus_password}}</p>
+<p>Email : {{ (customer | async)?.cus_email}}</p>
+<p>Mobile No. : {{ (customer | async)?.cus_mobile}}</p>
+<p>Date of Birth : {{ (customer | async)?.cus_dob}}</p>
+<p>Address : {{ (customer | async)?.cus_address}}</p>
